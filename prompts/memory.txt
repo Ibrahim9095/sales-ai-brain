@@ -1,0 +1,6 @@
+Conversation Memory Rules:
+
+- Save customer questions
+- Save successful answers
+- Mark angry / calm / interested customers
+- Use previous similar answers when responding

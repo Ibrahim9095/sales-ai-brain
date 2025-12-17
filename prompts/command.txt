@@ -1,0 +1,12 @@
+Muhit: python -m venv venv
+
+Activ etmek:  .\venv\Scripts\activate
+Serveri ise salmaq: uvicorn app.main:app --reload
+GitHub: git remote add origin https://github.com/Ibrahim9095/sales-ai-brain.git
+
+
+lazim olan paketler ilk once : pip install fastapi uvicorn python-telegram-bot python-dotenv pydantic requests
+
+----------------------------------------- TELEGRAM + DEEPSEEK ------------------------------------------------------
+TELEGRAM_BOT_TOKEN=8590066805:AAF8piEn8JCWOhl8wFVS4q4t0bSI4hsv0UU
+DEEPSEEK_API = sk-92c3d7405d13412ab62419e0e8abdfad 
