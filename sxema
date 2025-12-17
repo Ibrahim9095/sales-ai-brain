@@ -1,0 +1,34 @@
+brain/
+├── app/                     # 🚀 Əsas tətbiq qovluğu
+│   ├── ai/                  # 🧠 AI beyin qovluğu
+│   │   ├── __pycache__/     # Python önbellek
+│   │   ├── __init__.py      # Paket faylı
+│   │   ├── deepseek_client.py   # DeepSeek API funksiyaları
+│   │   └── router.py            # Hazırda boş
+│   │
+│   ├── config/              # ⚙️ Konfiqurasiya
+│   │   ├── __pycache__/
+│   │   ├── __init__.py
+│   │   └── settings.py       # .env fayldan tokenləri götürür
+│   │
+│   ├── memory/              # 📂 Chat yaddaşı
+│   │   ├── __pycache__/
+│   │   ├── __init__.py
+│   │   ├── memory.py         # save_message funksiyası (chat_memory.txt)
+│   │   └── schemas.py        # Yaddaş modelləri
+│   │
+│   ├── main.py              # FastAPI server
+│   └── telegram_bot.py      # Telegram ↔ AI inteqrasiyası
+│
+├── data/                    # 📂 Fiziki yaddaş
+│   └── memory.json          # DeepSeek + istifadəçi tarixçəsi
+│
+├── prompts/                 # 🔹 Köhnə prompt faylları
+│   ├── PROMPT.txt
+│   └── README.txt
+│
+├── .env                     # 🔑 API tokenləri və Telegram tokeni
+├── .gitignore               # Git-də izlənməyəcək fayllar üçün
+├── venv/                    # Virtual mühit
+├── requirements.txt
+└── README.md

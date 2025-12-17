@@ -2,7 +2,11 @@ Muhit: python -m venv venv
 
 Activ etmek:  .\venv\Scripts\activate
 Serveri ise salmaq: uvicorn app.main:app --reload
-GitHub: git remote add origin https://github.com/Ibrahim9095/sales-ai-brain.git
+GitHub: https://github.com/Ibrahim9095/sales-ai-brain.git
+
+ Botu işə sal:
+
+python -m app.telegram_bot
 
 
 lazim olan paketler ilk once : pip install fastapi uvicorn python-telegram-bot python-dotenv pydantic requests
