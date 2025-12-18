@@ -1,25 +1,22 @@
 import os
 import requests
-from dotenv import load_dotenv
+from app.config.settings import DEEPSEEK_API_KEY
 
-load_dotenv()
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
-API_URL = "https://api.deepseek.com/chat/completions"
+API_URL = "https://api.deepseek.com/v1/chat/completions"
 
 def ask_deepseek(message: str) -> str:
     headers = {
         "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
         "Content-Type": "application/json"
     }
-
     payload = {
         "model": "deepseek-chat",
         "messages": [
             {"role": "system", "content": "Sən satış və biznes üzrə ağıllı AI köməkçisən."},
             {"role": "user", "content": message}
-        ]
+        ],
+        "temperature": 0.4
     }
-
     try:
         response = requests.post(API_URL, headers=headers, json=payload, timeout=30)
         response.raise_for_status()

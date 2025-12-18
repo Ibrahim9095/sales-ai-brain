@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Bot Admin Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/telegram.svg">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Telegram Bot</h1>
+                        <p class="logo-subtitle">Admin Panel</p>
+                    </div>
+                </div>
+                <div class="bot-status">
+                    <div class="status-indicator online"></div>
+                    <span class="status-text">Bot Online</span>
+                </div>
+            </div>
+
+            <div class="sidebar-menu">
+                <div class="menu-section">
+                    <h3 class="section-title">Əsas</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item active">
+                            <a href="#" class="menu-link">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <i class="fas fa-robot"></i>
+                                <span>Bot Settings</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <i class="fas fa-users"></i>
+                                <span>Users</span>
+                                <span class="menu-badge">1,247</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <i class="fas fa-comments"></i>
+                                <span>Messages</span>
+                                <span class="menu-badge">156</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <h3 class="section-title">Alerts & Signals</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <i class="fas fa-bell"></i>
+                                <span>Alerts</span>
+                                <span class="menu-badge danger">3</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>High Risk</span>
+                                <span class="menu-badge warning">8</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <i class="fas fa-history"></i>
+                                <span>Activity Log</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <h3 class="section-title">Tools</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Analytics</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Help</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Müdaxilə Panel -->
+                <div class="menu-section intervention-panel">
+                    <h3 class="section-title">Müdaxilə Panel</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link" id="quickInterventionBtn">
+                                <i class="fas fa-handshake"></i>
+                                <span>Sürətli Müdaxilə</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link" id="emergencyInterventionBtn">
+                                <i class="fas fa-siren-on"></i>
+                                <span>Təcili Müdaxilə</span>
+                                <span class="menu-badge danger pulse">3</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link" id="autoResponseBtn">
+                                <i class="fas fa-reply-all"></i>
+                                <span>Avtomatik Cavab</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Admin User</span>
+                        <span class="user-role">Super Admin</span>
+                    </div>
+                    <div class="user-actions">
+                        <button class="user-action-btn" title="Intervention Mode" id="interventionModeToggle">
+                            <i class="fas fa-handshake"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="header-left">
+                    <h1 class="page-title">Dashboard</h1>
+                    <p class="page-subtitle">Telegram Bot Control Panel</p>
+                </div>
+                
+                <div class="header-right">
+                    <!-- Intervention Quick Actions -->
+                    <div class="intervention-quick-actions">
+                        <button class="btn-intervention-quick" id="sendDiscountBtn" title="Send Discount">
+                            <i class="fas fa-gift"></i>
+                            <span>Endirim</span>
+                        </button>
+                        <button class="btn-intervention-quick" id="sendReplyBtn" title="Quick Reply">
+                            <i class="fas fa-reply"></i>
+                            <span>Cavab</span>
+                        </button>
+                        <button class="btn-intervention-quick danger" id="emergencyBtn" title="Emergency">
+                            <i class="fas fa-siren-on"></i>
+                            <span>Təcili</span>
+                        </button>
+                    </div>
+                    
+                    <div class="header-actions">
+                        <button class="btn-refresh" title="Refresh">
+                            <i class="fas fa-sync-alt"></i>
+                        </button>
+                        <button class="btn-notification" title="Notifications">
+                            <i class="fas fa-bell"></i>
+                            <span class="notification-badge">5</span>
+                        </button>
+                        <button class="btn-fullscreen" title="Fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Stats Cards -->
+            <section class="stats-section">
+                <div class="stats-grid">
+                    <!-- Total Users -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-value">1,247</h3>
+                            <p class="stat-label">Total Users</p>
+                            <div class="stat-trend positive">
+                                <i class="fas fa-arrow-up"></i> 12.5%
+                            </div>
+                        </div>
+                        <div class="stat-action">
+                            <button class="btn-stat-action" title="Intervene">
+                                <i class="fas fa-handshake"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Active Chats -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-value">156</h3>
+                            <p class="stat-label">Active Chats</p>
+                            <div class="stat-trend positive">
+                                <i class="fas fa-arrow-up"></i> 8.2%
+                            </div>
+                        </div>
+                        <div class="stat-action">
+                            <button class="btn-stat-action" title="View Chats">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Messages Today -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-value">2,548</h3>
+                            <p class="stat-label">Messages Today</p>
+                            <div class="stat-trend negative">
+                                <i class="fas fa-arrow-down"></i> 3.1%
+                            </div>
+                        </div>
+                        <div class="stat-action">
+                            <button class="btn-stat-action" title="Reply All">
+                                <i class="fas fa-reply-all"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Response Time -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-value">2.4s</h3>
+                            <p class="stat-label">Avg Response Time</p>
+                            <div class="stat-trend positive">
+                                <i class="fas fa-arrow-down"></i> 15.7%
+                            </div>
+                        </div>
+                        <div class="stat-action">
+                            <button class="btn-stat-action" title="Optimize">
+                                <i class="fas fa-bolt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Content Grid -->
+            <div class="content-grid">
+                <!-- Left Column -->
+                <div class="content-left">
+                    <!-- Alert Signals -->
+                    <section class="card">
+                        <div class="card-header">
+                            <h2><i class="fas fa-exclamation-triangle"></i> Alert Signals</h2>
+                            <div class="card-actions">
+                                <button class="btn-filter active">All</button>
+                                <button class="btn-filter">High</button>
+                                <button class="btn-filter">Medium</button>
+                                <button class="btn-intervention-bulk" id="bulkInterventionBtn">
+                                    <i class="fas fa-handshake"></i>
+                                    Bulk Intervene
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="alerts-list">
+                                <!-- High Risk Alert -->
+                                <div class="alert-item high-risk">
+                                    <div class="alert-icon">
+                                        <i class="fas fa-fire"></i>
+                                    </div>
+                                    <div class="alert-content">
+                                        <div class="alert-header">
+                                            <h4 class="alert-title">İbrahim Əliyev</h4>
+                                            <span class="alert-time">2 min ago</span>
+                                            <span class="alert-risk">92% Risk</span>
+                                        </div>
+                                        <p class="alert-message">
+                                            "Bahadır bu, qiymət çox yüksəkdir, rəqiblər daha ucuz satır"
+                                        </p>
+                                        <div class="alert-tags">
+                                            <span class="alert-tag price"><i class="fas fa-money-bill-wave"></i> Qiymət</span>
+                                            <span class="alert-tag urgent"><i class="fas fa-clock"></i> Təcili</span>
+                                            <span class="alert-tag repeat"><i class="fas fa-redo"></i> Təkrar</span>
+                                        </div>
+                                        <div class="alert-actions">
+                                            <button class="btn-action intervene" data-user="İbrahim Əliyev" data-risk="92">
+                                                <i class="fas fa-handshake"></i>
+                                                Müdaxilə et
+                                            </button>
+                                            <button class="btn-action view" data-chat="ibrahim_chat">
+                                                <i class="fas fa-eye"></i>
+                                                Söhbətə bax
+                                            </button>
+                                            <button class="btn-action offer" data-user="İbrahim Əliyev">
+                                                <i class="fas fa-gift"></i>
+                                                Təklif göndər
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Medium Risk Alert -->
+                                <div class="alert-item medium-risk">
+                                    <div class="alert-icon">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                    </div>
+                                    <div class="alert-content">
+                                        <div class="alert-header">
+                                            <h4 class="alert-title">Leyla Məmmədova</h4>
+                                            <span class="alert-time">15 min ago</span>
+                                            <span class="alert-risk">78% Risk</span>
+                                        </div>
+                                        <p class="alert-message">
+                                            "Çatdırılma gecikir, pulumu qaytarın. 3 gün gözlədim"
+                                        </p>
+                                        <div class="alert-tags">
+                                            <span class="alert-tag delivery"><i class="fas fa-shipping-fast"></i> Çatdırılma</span>
+                                            <span class="alert-tag angry"><i class="fas fa-angry"></i> Narazı</span>
+                                        </div>
+                                        <div class="alert-actions">
+                                            <button class="btn-action intervene" data-user="Leyla Məmmədova" data-risk="78">
+                                                <i class="fas fa-handshake"></i>
+                                                Müdaxilə et
+                                            </button>
+                                            <button class="btn-action reply" data-user="Leyla Məmmədova">
+                                                <i class="fas fa-reply"></i>
+                                                Sürətli cavab
+                                            </button>
+                                            <button class="btn-action call" data-user="Leyla Məmmədova">
+                                                <i class="fas fa-phone-alt"></i>
+                                                Zəng et
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Low Risk Alert -->
+                                <div class="alert-item low-risk">
+                                    <div class="alert-icon">
+                                        <i class="fas fa-info-circle"></i>
+                                    </div>
+                                    <div class="alert-content">
+                                        <div class="alert-header">
+                                            <h4 class="alert-title">Əli Hüseynov</h4>
+                                            <span class="alert-time">30 min ago</span>
+                                            <span class="alert-risk">45% Risk</span>
+                                        </div>
+                                        <p class="alert-message">
+                                            "Məhsulun rəngi kataloqdan fərqlidir, dəyişdirmək istəyirəm"
+                                        </p>
+                                        <div class="alert-tags">
+                                            <span class="alert-tag quality"><i class="fas fa-star"></i> Keyfiyyət</span>
+                                        </div>
+                                        <div class="alert-actions">
+                                            <button class="btn-action intervene" data-user="Əli Hüseynov" data-risk="45">
+                                                <i class="fas fa-handshake"></i>
+                                                Müdaxilə et
+                                            </button>
+                                            <button class="btn-action info" data-user="Əli Hüseynov">
+                                                <i class="fas fa-info-circle"></i>
+                                                Ətraflı
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Active Chats -->
+                    <section class="card">
+                        <div class="card-header">
+                            <h2><i class="fab fa-telegram"></i> Active Chats</h2>
+                            <div class="card-actions">
+                                <button class="btn-new-chat">
+                                    <i class="fas fa-plus"></i>
+                                    New Chat
+                                </button>
+                                <button class="btn-bulk-reply" id="bulkReplyBtn">
+                                    <i class="fas fa-reply-all"></i>
+                                    Bulk Reply
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="chats-list">
+                                <!-- Chat 1 -->
+                                <div class="chat-item unread high-risk">
+                                    <div class="chat-avatar high-risk">
+                                        <i class="fab fa-telegram"></i>
+                                    </div>
+                                    <div class="chat-info">
+                                        <div class="chat-header">
+                                            <h4 class="chat-user">İbrahim Əliyev</h4>
+                                            <span class="chat-time">2 min</span>
+                                            <button class="chat-intervene-btn" data-user="İbrahim Əliyev">
+                                                <i class="fas fa-handshake"></i>
+                                                Müdaxilə
+                                            </button>
+                                        </div>
+                                        <p class="chat-preview">
+                                            "Bahadır bu, qiymətlər niyə belə yüksəkdir? Rəqibləriniz daha ucuz satır..."
+                                        </p>
+                                        <div class="chat-meta">
+                                            <span class="chat-status high-risk">92% Risk</span>
+                                            <span class="unread-count">3</span>
+                                            <div class="chat-quick-actions">
+                                                <button class="chat-quick-action" title="Quick Discount">
+                                                    <i class="fas fa-gift"></i>
+                                                </button>
+                                                <button class="chat-quick-action" title="Quick Reply">
+                                                    <i class="fas fa-reply"></i>
+                                                </button>
+                                                <button class="chat-quick-action" title="Emergency">
+                                                    <i class="fas fa-siren-on"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Chat 2 -->
+                                <div class="chat-item medium-risk">
+                                    <div class="chat-avatar medium-risk">
+                                        <i class="fab fa-telegram"></i>
+                                    </div>
+                                    <div class="chat-info">
+                                        <div class="chat-header">
+                                            <h4 class="chat-user">Leyla Məmmədova</h4>
+                                            <span class="chat-time">15 min</span>
+                                            <button class="chat-intervene-btn" data-user="Leyla Məmmədova">
+                                                <i class="fas fa-handshake"></i>
+                                                Müdaxilə
+                                            </button>
+                                        </div>
+                                        <p class="chat-preview">
+                                            "Sifarişim hələ çatdırılmayıb, nə vaxt gələcək? Çox gecikir..."
+                                        </p>
+                                        <div class="chat-meta">
+                                            <span class="chat-status medium-risk">78% Risk</span>
+                                            <div class="chat-quick-actions">
+                                                <button class="chat-quick-action" title="Quick Discount">
+                                                    <i class="fas fa-gift"></i>
+                                                </button>
+                                                <button class="chat-quick-action" title="Quick Reply">
+                                                    <i class="fas fa-reply"></i>
+                                                </button>
+                                                <button class="chat-quick-action" title="Update Status">
+                                                    <i class="fas fa-shipping-fast"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Chat 3 -->
+                                <div class="chat-item">
+                                    <div class="chat-avatar">
+                                        <i class="fab fa-telegram"></i>
+                                    </div>
+                                    <div class="chat-info">
+                                        <div class="chat-header">
+                                            <h4 class="chat-user">Əli Hüseynov</h4>
+                                            <span class="chat-time">30 min</span>
+                                            <button class="chat-intervene-btn" data-user="Əli Hüseynov">
+                                                <i class="fas fa-handshake"></i>
+                                                Müdaxilə
+                                            </button>
+                                        </div>
+                                        <p class="chat-preview">
+                                            "Məhsulun rəngi kataloqdan fərqlidir, dəyişdirmək istəyirəm"
+                                        </p>
+                                        <div class="chat-meta">
+                                            <span class="chat-status normal">45% Risk</span>
+                                            <div class="chat-quick-actions">
+                                                <button class="chat-quick-action" title="Quick Reply">
+                                                    <i class="fas fa-reply"></i>
+                                                </button>
+                                                <button class="chat-quick-action" title="More Info">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column -->
+                <div class="content-right">
+                    <!-- Intervention Panel -->
+                    <section class="card intervention-panel-card">
+                        <div class="card-header">
+                            <h2><i class="fas fa-handshake"></i> Müdaxilə Panel</h2>
+                            <div class="card-actions">
+                                <button class="btn-intervention-mode" id="toggleInterventionMode">
+                                    <i class="fas fa-bolt"></i>
+                                    Müdaxilə Rejimi
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <!-- Selected Customer -->
+                            <div class="selected-customer">
+                                <div class="customer-info">
+                                    <div class="customer-avatar selected">
+                                        <i class="fab fa-telegram"></i>
+                                    </div>
+                                    <div class="customer-details">
+                                        <h3 class="customer-name">İbrahim Əliyev</h3>
+                                        <div class="customer-stats">
+                                            <span class="customer-risk high">92% Risk</span>
+                                            <span class="customer-time">2 dəq əvvəl</span>
+                                            <span class="customer-platform">
+                                                <i class="fab fa-telegram"></i> Telegram
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customer-problem">
+                                    <h4>Problem:</h4>
+                                    <p>"Qiymət çox yüksəkdir, rəqiblər daha ucuz satır"</p>
+                                </div>
+                            </div>
+
+                            <!-- Intervention Actions -->
+                            <div class="intervention-actions">
+                                <h4>Müdaxilə Tədbirləri:</h4>
+                                
+                                <div class="action-category">
+                                    <h5><i class="fas fa-gift"></i> Endirim & Təklif</h5>
+                                    <div class="action-buttons">
+                                        <button class="btn-intervention-action discount" data-percent="10">
+                                            <i class="fas fa-percentage"></i>
+                                            10% Endirim
+                                        </button>
+                                        <button class="btn-intervention-action discount" data-percent="15">
+                                            <i class="fas fa-percentage"></i>
+                                            15% Endirim
+                                        </button>
+                                        <button class="btn-intervention-action discount" data-percent="20">
+                                            <i class="fas fa-percentage"></i>
+                                            20% Endirim
+                                        </button>
+                                        <button class="btn-intervention-action special">
+                                            <i class="fas fa-star"></i>
+                                            Xüsusi Təklif
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="action-category">
+                                    <h5><i class="fas fa-comment-medical"></i> Cavab & Kommunikasiya</h5>
+                                    <div class="action-buttons">
+                                        <button class="btn-intervention-action quick-reply" data-type="apology">
+                                            <i class="fas fa-hands-helping"></i>
+                                            Üzr mesajı
+                                        </button>
+                                        <button class="btn-intervention-action quick-reply" data-type="explanation">
+                                            <i class="fas fa-info-circle"></i>
+                                            İzahat göndər
+                                        </button>
+                                        <button class="btn-intervention-action quick-reply" data-type="solution">
+                                            <i class="fas fa-lightbulb"></i>
+                                            Həll təklifi
+                                        </button>
+                                        <button class="btn-intervention-action personal">
+                                            <i class="fas fa-user-tie"></i>
+                                            Şəxsi mesaj
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="action-category">
+                                    <h5><i class="fas fa-siren-on"></i> Təcili Tədbirlər</h5>
+                                    <div class="action-buttons">
+                                        <button class="btn-intervention-action emergency call">
+                                            <i class="fas fa-phone-alt"></i>
+                                            Dərhal zəng et
+                                        </button>
+                                        <button class="btn-intervention-action emergency manager">
+                                            <i class="fas fa-user-tie"></i>
+                                            Menecerə yönləndir
+                                        </button>
+                                        <button class="btn-intervention-action emergency priority">
+                                            <i class="fas fa-flag"></i>
+                                            Prioritetli dəstək
+                                        </button>
+                                        <button class="btn-intervention-action emergency refund">
+                                            <i class="fas fa-money-bill-wave"></i>
+                                            Pul qaytar
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Custom Message -->
+                                <div class="custom-intervention">
+                                    <h5><i class="fas fa-edit"></i> Xüsusi Müdaxilə</h5>
+                                    <div class="message-input-group">
+                                        <textarea class="custom-message" placeholder="Xüsusi mesaj yazın..."></textarea>
+                                        <button class="btn-send-custom">
+                                            <i class="fas fa-paper-plane"></i>
+                                            Göndər
+                                        </button>
+                                    </div>
+                                    <div class="quick-templates">
+                                        <button class="btn-quick-template" data-template="price">
+                                            Qiymət izahı
+                                        </button>
+                                        <button class="btn-quick-template" data-template="delivery">
+                                            Çatdırılma izahı
+                                        </button>
+                                        <button class="btn-quick-template" data-template="quality">
+                                            Keyfiyyət izahı
+                                        </button>
+                                        <button class="btn-quick-template" data-template="apology">
+                                            Üzr istəmə
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Intervention History -->
+                            <div class="intervention-history">
+                                <h4><i class="fas fa-history"></i> Müdaxilə Tarixçəsi</h4>
+                                <div class="history-list">
+                                    <div class="history-item success">
+                                        <div class="history-time">14:30</div>
+                                        <div class="history-action">
+                                            <i class="fas fa-gift"></i>
+                                            15% endirim təklifi göndərildi
+                                        </div>
+                                        <div class="history-status success">
+                                            <i class="fas fa-check-circle"></i> Qəbul edildi
+                                        </div>
+                                    </div>
+                                    <div class="history-item warning">
+                                        <div class="history-time">14:25</div>
+                                        <div class="history-action">
+                                            <i class="fas fa-reply"></i>
+                                            Sürətli cavab göndərildi
+                                        </div>
+                                        <div class="history-status pending">
+                                            <i class="fas fa-clock"></i> Gözləyir
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Bot Status -->
+                    <section class="card">
+                        <div class="card-header">
+                            <h2><i class="fas fa-robot"></i> Bot Status</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="bot-status-card">
+                                <div class="status-indicator large online">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="status-info">
+                                    <h3 class="status-title">Bot is Online</h3>
+                                    <p class="status-subtitle">All systems operational</p>
+                                    
+                                    <div class="status-metrics">
+                                        <div class="metric">
+                                            <span class="metric-label">Uptime</span>
+                                            <span class="metric-value">99.8%</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-label">Response Time</span>
+                                            <span class="metric-value">2.4s</span>
+                                        </div>
+                                        <div class="metric">
+                                            <span class="metric-label">Active Sessions</span>
+                                            <span class="metric-value">156</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quick-actions">
+                                <h4>Quick Actions</h4>
+                                <div class="action-buttons">
+                                    <button class="btn-quick">
+                                        <i class="fas fa-sync-alt"></i>
+                                        <span>Restart Bot</span>
+                                    </button>
+                                    <button class="btn-quick">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Settings</span>
+                                    </button>
+                                    <button class="btn-quick">
+                                        <i class="fas fa-history"></i>
+                                        <span>Logs</span>
+                                    </button>
+                                    <button class="btn-quick">
+                                        <i class="fas fa-ban"></i>
+                                        <span>Stop Bot</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Recent Interventions -->
+                    <section class="card">
+                        <div class="card-header">
+                            <h2><i class="fas fa-handshake"></i> Son Müdaxilələr</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="interventions-list">
+                                <div class="intervention-item success">
+                                    <div class="intervention-icon">
+                                        <i class="fas fa-gift"></i>
+                                    </div>
+                                    <div class="intervention-content">
+                                        <h4>İbrahim Əliyev</h4>
+                                        <p>15% endirim ilə qurtarıldı</p>
+                                        <div class="intervention-meta">
+                                            <span class="intervention-time">2 dəq əvvəl</span>
+                                            <span class="intervention-result success">
+                                                <i class="fas fa-check"></i> Uğurlu
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="intervention-item warning">
+                                    <div class="intervention-icon">
+                                        <i class="fas fa-reply"></i>
+                                    </div>
+                                    <div class="intervention-content">
+                                        <h4>Leyla Məmmədova</h4>
+                                        <p>Sürətli cavab göndərildi</p>
+                                        <div class="intervention-meta">
+                                            <span class="intervention-time">15 dəq əvvəl</span>
+                                            <span class="intervention-result pending">
+                                                <i class="fas fa-clock"></i> Gözləyir
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="intervention-item">
+                                    <div class="intervention-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="intervention-content">
+                                        <h4>Ayşə Quliyeva</h4>
+                                        <p>Şəxsi zəng təklifi</p>
+                                        <div class="intervention-meta">
+                                            <span class="intervention-time">30 dəq əvvəl</span>
+                                            <span class="intervention-result">
+                                                <i class="fas fa-hourglass-half"></i> Planlaşdırılıb
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="main-footer">
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <span class="copyright">© 2024 Telegram Bot Admin Panel</span>
+                        <span class="intervention-status">
+                            <i class="fas fa-handshake"></i>
+                            Müdaxilə Rejimi: <span class="status-text">Aktiv</span>
+                        </span>
+                    </div>
+                    <div class="footer-right">
+                        <span class="system-info">
+                            <i class="fas fa-server"></i>
+                            Server: Online • Memory: 64% • CPU: 42%
+                        </span>
+                        <span class="intervention-count">
+                            <i class="fas fa-bullhorn"></i>
+                            Bu gün: <strong>12</strong> müdaxilə
+                        </span>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Intervention Modal -->
+    <div class="intervention-modal" id="interventionModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-handshake"></i> Müdaxilə Et</h3>
+                <button class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-customer-info">
+                    <div class="modal-avatar">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <div class="modal-details">
+                        <h4 id="modalCustomerName">İbrahim Əliyev</h4>
+                        <div class="modal-stats">
+                            <span class="modal-risk high">92% Risk</span>
+                            <span class="modal-platform">Telegram</span>
+                            <span class="modal-time">2 dəq əvvəl</span>
+                        </div>
+                        <p class="modal-message" id="modalMessage">
+                            "Bahadır bu, qiymət çox yüksəkdir, rəqiblər daha ucuz satır"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="intervention-options">
+                    <h4>Müdaxilə Seçimləri:</h4>
+                    <div class="options-grid">
+                        <div class="option-card discount">
+                            <div class="option-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <h5>Endirim Göndər</h5>
+                            <p>Xüsusi endirim kodu ilə müştəri razı salın</p>
+                            <button class="btn-select-option" data-type="discount">
+                                Seç <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="option-card message">
+                            <div class="option-icon">
+                                <i class="fas fa-comment-medical"></i>
+                            </div>
+                            <h5>Şəxsi Mesaj</h5>
+                            <p>Empatik və şəxsi cavab yazın</p>
+                            <button class="btn-select-option" data-type="message">
+                                Seç <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div class="option-card call">
+                            <div class="option-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h5>Zəng Et</h5>

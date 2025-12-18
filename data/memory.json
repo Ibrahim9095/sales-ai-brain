@@ -1,218 +1,158 @@
-[
-  {
-    "user_id": 5106471763,
-    "user_text": "Salam",
-    "ai_text": "Salam! Necə kömək edə bilərəm?",
-    "timestamp": "2025-12-17T17:52:18.221557"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Kimin ilə danışıram?",
-    "ai_text": "Salam! Mən DeepSeek AI köməkçisiyəm. DeepSeek tərəfindən yaradılmış bir süni intellekt modeliyəm. Sizə suallarınızda cavab vermək, müxtəlif mövzularda kömək etmək və söhbət etmək üçün buradayam. \n\nMən tamamilə pulsuz xidmət edirəm, şəkilləri oxuya bilirəm (lakin şəkil yarada bilmirəm), fayl yükləməni dəstəkləyirəm və 128K kontekst pəncərəsi ilə uzun müzakirələr apara bilirəm. \n\nSizə necə kömək edə bilərəm? 😊",
-    "timestamp": "2025-12-17T17:52:35.240453"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Niyə cavab vermirsən?",
-    "ai_text": "Bağışlayın, cavab verməyimdə gecikdim! Mən buradasınız və sizə kömək etməyə hazıram. Hansı sualınız var? 😊",
-    "timestamp": "2025-12-17T17:53:35.788135"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "🎁 Xüsusi təklif",
-    "ai_text": "Təbriklər! 🎉 Sizə **xüsusi təklifimiz** var:\n\n**🔥 30% ENDİRİM + Pulsuz Çatdırılma**  \nMüddət: yalnız bu həftə sonuna qədər\n\n**✨ Niyə indi almalısınız?**\n- ✅ **Məhdud sayda** mövcud olan premium məhsullar\n- ✅ **2 il zəmanət** bütün elektronika alətlərinə\n- ✅ **30 günlük** qaytarma və dəyişdirmə imkanı\n- ✅ **Pulsız quraşdırma** xidməti (seçilmiş məhsullarda)\n\n**🚀 Ən çox satılanlar:**\n• Smart saatlar seriyası - **299 AZN** yerinə **209 AZN**\n• Qulaqlıqlar (yeni model) - **179 AZN** yerinə **125 AZN**\n• Powerbank 20000mAh - **89 AZN** yerinə **62 AZN**\n\n**📞 Sifariş üçün:**  \n(012) 123-45-67 və ya **onlayn sifariş** üçün [www.magaza.az/xususi-teklif](https://www.magaza.az/xususi-teklif)\n\n**⚡ Tez hərəkət edin! Bu təklif tez bitəcək.**",
-    "timestamp": "2025-12-17T17:53:52.984146"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Bildim çox sağolun",
-    "ai_text": "Rica ederim! Size yardımcı olabildiysem ne mutlu bana. Başka bir konuda daha yardıma ihtiyacınız olursa, her zaman buradayım. İyi günler dilerim! 😊",
-    "timestamp": "2025-12-17T17:58:10.110188"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Salam",
-    "ai_text": "",
-    "timestamp": "2025-12-17T23:32:44.979138"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "💰 Qiymət soruş",
-    "ai_text": "",
-    "timestamp": "2025-12-17T23:35:00.101746"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Salam",
-    "ai_text": "",
-    "timestamp": "2025-12-17T23:37:01.091049"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Salam",
-    "ai_text": "",
-    "timestamp": "2025-12-17T23:41:51.861506"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "ℹ️ Haqqımızda",
-    "ai_text": "",
-    "timestamp": "2025-12-17T23:55:15.793036"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Salam",
-    "ai_text": "",
-    "timestamp": "2025-12-18T00:01:49.816806"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Gg",
-    "ai_text": "",
-    "timestamp": "2025-12-18T00:04:28.540060"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Salam",
-    "ai_text": "",
-    "timestamp": "2025-12-18T00:18:34.781395"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "",
-    "ai_text": "DeepSeek API xətası: HTTP Error",
-    "timestamp": "2025-12-18T00:18:36.859782"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Necəsən",
-    "ai_text": "",
-    "timestamp": "2025-12-18T00:18:44.760606"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "",
-    "ai_text": "DeepSeek API xətası: HTTP Error",
-    "timestamp": "2025-12-18T00:18:46.402573"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "H",
-    "ai_text": "",
-    "timestamp": "2025-12-18T00:23:34.569798"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "",
-    "ai_text": "DeepSeek API xətası: HTTP Error",
-    "timestamp": "2025-12-18T00:23:36.515096"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Salam",
-    "ai_text": "",
-    "timestamp": "2025-12-18T00:36:57.049036"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "",
-    "ai_text": "DeepSeek API xətası: HTTP Error",
-    "timestamp": "2025-12-18T00:36:58.650052"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Bu",
-    "ai_text": "",
-    "timestamp": "2025-12-18T00:48:37.322662"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "",
-    "ai_text": "DeepSeek API xətası: HTTP Error",
-    "timestamp": "2025-12-18T00:48:38.947249"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Salam",
-    "ai_text": "",
-    "timestamp": "2025-12-18T00:54:34.518972"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "",
-    "ai_text": "DeepSeek API xətası: HTTP Error",
-    "timestamp": "2025-12-18T00:54:36.154064"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "💰 Qiymət soruş",
-    "ai_text": "",
-    "timestamp": "2025-12-18T00:59:06.336620"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "",
-    "ai_text": "DeepSeek API xətası: HTTP Error",
-    "timestamp": "2025-12-18T00:59:07.933199"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "🚚 Çatdırılma",
-    "ai_text": "",
-    "timestamp": "2025-12-18T01:02:05.453765"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "",
-    "ai_text": "DeepSeek API xətası: HTTP Error",
-    "timestamp": "2025-12-18T01:02:07.074864"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "💰 Qiymət soruş",
-    "ai_text": "",
-    "timestamp": "2025-12-18T01:03:02.281664"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "",
-    "ai_text": "DeepSeek API xətası: HTTP Error",
-    "timestamp": "2025-12-18T01:03:03.923120"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Salam",
-    "ai_text": "",
-    "timestamp": "2025-12-18T01:04:51.802957"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "",
-    "ai_text": "DeepSeek API xətası: HTTP Error",
-    "timestamp": "2025-12-18T01:04:53.408029"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Salam",
-    "ai_text": "",
-    "timestamp": "2025-12-18T01:10:32.012315"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "",
-    "ai_text": "Salam! Necəsən? Sənə kömək edə biləcəyim bir şey varmı?",
-    "timestamp": "2025-12-18T01:10:35.387514"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "Salam axşamın xeyir nehəyatki çalışdın 😁",
-    "ai_text": "",
-    "timestamp": "2025-12-18T01:10:53.163841"
-  },
-  {
-    "user_id": 5106471763,
-    "user_text": "",
-    "ai_text": "Salam! Axşamınız xeyir olsun! 😊 Çox sağolun, həmişə kömək etməyə hazıram. Necəsiz? Bu axşam sizə hansı mövzuda kömək edə bilərəm?",
-    "timestamp": "2025-12-18T01:10:57.672740"
+{
+  "users": {
+    "5106471763": {
+      "learned": [
+        {
+          "question": "Salam",
+          "answer": "Salam! Necəsən? Sənə necə kömək edə bilərəm?",
+          "learned_at": "2025-12-18T15:28:48.081616"
+        },
+        {
+          "question": "Salam",
+          "answer": "Salam! Necəsən? Sənə necə kömək edə bilərəm?",
+          "learned_at": "2025-12-18T15:28:48.085618"
+        },
+        {
+          "question": "Necəsən?",
+          "answer": "Salam! Mən yaxşıyam, təşəkkür edirəm! Sizə necə kömək edə bilərəm? Satış, marketinq və ya ümumi biznes suallarınızla bağlı kömək etməkdən məmnuniyyət duyaram.",
+          "learned_at": "2025-12-18T15:29:14.152809"
+        },
+        {
+          "question": "Necəsən?",
+          "answer": "Salam! Mən yaxşıyam, təşəkkür edirəm! Sizə necə kömək edə bilərəm? Satış, marketinq və ya ümumi biznes suallarınızla bağlı kömək etməkdən məmnuniyyət duyaram.",
+          "learned_at": "2025-12-18T15:29:14.156813"
+        },
+        {
+          "question": "Mənim adımı bilirsən?",
+          "answer": "Siz indiyə qədər öz adınızı mənə bildirməmisiniz, ona görə də onu bilmirəm. 😊 Sizə necə müraciət etməyi üstün tutursunuz? Adınızı desəniz, söhbət zamanı onu istifadə edə bilərəm.",
+          "learned_at": "2025-12-18T15:29:42.912891"
+        },
+        {
+          "question": "Mənim adımı bilirsən?",
+          "answer": "Siz indiyə qədər öz adınızı mənə bildirməmisiniz, ona görə də onu bilmirəm. 😊 Sizə necə müraciət etməyi üstün tutursunuz? Adınızı desəniz, söhbət zamanı onu istifadə edə bilərəm.",
+          "learned_at": "2025-12-18T15:29:42.916892"
+        },
+        {
+          "question": "Mənim adım ibrahimdir",
+          "answer": "Salam İbrahim! Sizinlə tanış olduğuma şad oldum. Mən sizə satış və biznes məsələlərində kömək etmək üçün buradayam. \n\nNə üzrə köməyə ehtiyacınız var? Məsələn:\n- Satış strategiyaları\n- Müştəri əlaqələri\n- Biznes planlaşdırma\n- Marketinq taktikası\n- Satış təqdimatları\n- və ya başqa hər hansı biznes mövzusu\n\nSizə necə kömək edə bilərəm?",
+          "learned_at": "2025-12-18T15:29:56.149587"
+        },
+        {
+          "question": "Mənim adım ibrahimdir",
+          "answer": "Salam İbrahim! Sizinlə tanış olduğuma şad oldum. Mən sizə satış və biznes məsələlərində kömək etmək üçün buradayam. \n\nNə üzrə köməyə ehtiyacınız var? Məsələn:\n- Satış strategiyaları\n- Müştəri əlaqələri\n- Biznes planlaşdırma\n- Marketinq taktikası\n- Satış təqdimatları\n- və ya başqa hər hansı biznes mövzusu\n\nSizə necə kömək edə bilərəm?",
+          "learned_at": "2025-12-18T15:29:56.154591"
+        },
+        {
+          "question": "💰 Qiymət soruş",
+          "answer": "Məhsul və ya xidmətlərinizin qiymətləri haqqında məlumat vermək üçün mənə daha çox məlumat lazımdır. Zəhmət olmasa, aşağıdakı məlumatları təqdim edin:\n\n1. **Məhsulunuzun/xidmətinizin növü** (məsələn: proqram təminatı, məsləhət xidmətləri, fiziki məhsul)\n2. **Hədəf auditoriya** (fərdi istifadəçilər, kiçik bizneslər, korporasiyalar)\n3. **Rəqabətli qiymət diapazonu** (sahənizdəki oxşar təkliflərin qiymətləri)\n\nBu məlumatları aldıqdan sonra sizə aşağıdakıları təklif edə bilərəm:\n- Qiymət strategiyası üçün tövsiyələr\n- Qiymət modelləri (abunəlik, birdəfəlik ödəniş, tier sistemi)\n- Dəyər əsaslı qiymət qurmaq üçün yanaşmalar\n\nMəlumatlarınızı paylaşmağa hazırsınız?",
+          "learned_at": "2025-12-18T15:30:12.148108"
+        },
+        {
+          "question": "💰 Qiymət soruş",
+          "answer": "Məhsul və ya xidmətlərinizin qiymətləri haqqında məlumat vermək üçün mənə daha çox məlumat lazımdır. Zəhmət olmasa, aşağıdakı məlumatları təqdim edin:\n\n1. **Məhsulunuzun/xidmətinizin növü** (məsələn: proqram təminatı, məsləhət xidmətləri, fiziki məhsul)\n2. **Hədəf auditoriya** (fərdi istifadəçilər, kiçik bizneslər, korporasiyalar)\n3. **Rəqabətli qiymət diapazonu** (sahənizdəki oxşar təkliflərin qiymətləri)\n\nBu məlumatları aldıqdan sonra sizə aşağıdakıları təklif edə bilərəm:\n- Qiymət strategiyası üçün tövsiyələr\n- Qiymət modelləri (abunəlik, birdəfəlik ödəniş, tier sistemi)\n- Dəyər əsaslı qiymət qurmaq üçün yanaşmalar\n\nMəlumatlarınızı paylaşmağa hazırsınız?",
+          "learned_at": "2025-12-18T15:30:12.152111"
+        },
+        {
+          "question": "🚚 Çatdırılma",
+          "answer": "Çatdırılma xidməti ilə bağlı sizə necə kömək edə bilərəm? Məsələn:\n\n1. **Çatdırılma seçimləri** – Poçt, kuryer, ekspres çatdırılma və s.\n2. **Çatdırılma qiymətləri** – Ölkə daxili və ya beynəlxalq tariflər.\n3. **Çatdırılma müddəti** – Standart, sürətli çatdırılma seçimləri.\n4. **Sifarişin izlənməsi** – Göndərmə nömrəsi ilə paketinizin statusu.\n5. **Beynəlxalq çatdırılma** – Gömrük, çatdırılma məhdudiyyətləri.\n6. **Xüsusi tələblər** – Həssas, böyük ölçülü və ya soyuducu tələb edən məhsullar.\n\nMəlumat verin, sizə uyğun çatdırılma variantını təklif edim! 📦✨",
+          "learned_at": "2025-12-18T15:30:28.265684"
+        },
+        {
+          "question": "🚚 Çatdırılma",
+          "answer": "Çatdırılma xidməti ilə bağlı sizə necə kömək edə bilərəm? Məsələn:\n\n1. **Çatdırılma seçimləri** – Poçt, kuryer, ekspres çatdırılma və s.\n2. **Çatdırılma qiymətləri** – Ölkə daxili və ya beynəlxalq tariflər.\n3. **Çatdırılma müddəti** – Standart, sürətli çatdırılma seçimləri.\n4. **Sifarişin izlənməsi** – Göndərmə nömrəsi ilə paketinizin statusu.\n5. **Beynəlxalq çatdırılma** – Gömrük, çatdırılma məhdudiyyətləri.\n6. **Xüsusi tələblər** – Həssas, böyük ölçülü və ya soyuducu tələb edən məhsullar.\n\nMəlumat verin, sizə uyğun çatdırılma variantını təklif edim! 📦✨",
+          "learned_at": "2025-12-18T15:30:28.270687"
+        },
+        {
+          "question": "💳 Ödəniş seçimi",
+          "answer": "Müştəri olaraq, sizə aşağıdakı ödəniş seçimlərini təklif edə bilirəm:\n\n**💳 Kartla ödəniş:**\n- Bank kartları (Visa, Mastercard, AMEX)\n- Debət kartları\n- Virtual kartlar\n- Taksit imkanları (mövcud olduqda)\n\n**📲 Rəqəmsal ödənişlər:**\n- Apple Pay / Google Pay\n- Elektron pul kisələri (PayPal, Skrill və s.)\n- Mobil ödəniş sistemləri\n\n**🌐 Onlayn ödəniş:**\n- Bank köçürməsi\n- Onlayn bankçılıq\n- Kripto valyuta (müəyyən bizneslər üçün)\n\n**💰 Nağd ödəniş:**\n- Nağd qəbz ilə\n- Qapıda nağd ödəniş (çatdırılma zamanı)\n\n**🔄 Digər seçimlər:**\n- Ödəniş planları / abunələr\n- Vauçer / promo kodlar\n- Kompaniya hesabı ilə ödəniş\n\nHansı ödəniş üsulu sizin üçün daha əlverişlidir? Mən sizə seçiminizə uyğun kömək göstərə bilərəm! 😊\n\nMüəyyən bir ödəniş metodu ilə bağlı sualınız varsa və ya kömək lazımdırsa, deyin!",
+          "learned_at": "2025-12-18T15:30:50.149507"
+        },
+        {
+          "question": "💳 Ödəniş seçimi",
+          "answer": "Müştəri olaraq, sizə aşağıdakı ödəniş seçimlərini təklif edə bilirəm:\n\n**💳 Kartla ödəniş:**\n- Bank kartları (Visa, Mastercard, AMEX)\n- Debət kartları\n- Virtual kartlar\n- Taksit imkanları (mövcud olduqda)\n\n**📲 Rəqəmsal ödənişlər:**\n- Apple Pay / Google Pay\n- Elektron pul kisələri (PayPal, Skrill və s.)\n- Mobil ödəniş sistemləri\n\n**🌐 Onlayn ödəniş:**\n- Bank köçürməsi\n- Onlayn bankçılıq\n- Kripto valyuta (müəyyən bizneslər üçün)\n\n**💰 Nağd ödəniş:**\n- Nağd qəbz ilə\n- Qapıda nağd ödəniş (çatdırılma zamanı)\n\n**🔄 Digər seçimlər:**\n- Ödəniş planları / abunələr\n- Vauçer / promo kodlar\n- Kompaniya hesabı ilə ödəniş\n\nHansı ödəniş üsulu sizin üçün daha əlverişlidir? Mən sizə seçiminizə uyğun kömək göstərə bilərəm! 😊\n\nMüəyyən bir ödəniş metodu ilə bağlı sualınız varsa və ya kömək lazımdırsa, deyin!",
+          "learned_at": "2025-12-18T15:30:50.162517"
+        },
+        {
+          "question": "🎁 Xüsusi təklif",
+          "answer": "Təbrik edirik! 🎉  \n\nXüsusi təklifimizdən yararlanmaq üçün aşağıdakı seçimlərdən birini seçə bilərsiniz:  \n\n### 🚀 **1-ci seçim: Məhdud sayda endirim**  \n- **30% endirim** ilk 10 müştəri üçün (kod: **XOS30**).  \n- **Pulsuz çatdırılma** 50 AZN-dən yuxarı sifarişlərə.  \n\n### 🎁 **2-ci seçim: Hədiyyə ilə alış-veriş**  \n- 100 AZN dəyərində alış-veriş edin, **qiyməti 20 AZN olan məhsulu pulsuz** əldə edin.  \n\n### 📦 **3-cü seçim: Topdan alış üstünlükləri**  \n- 500 AZN+ sifarişlərə **xüsusi qiymət + şəxsi menecer** dəstəyi.  \n\n---\n\n📞 **Dərhal qeydiyyat və ya sorğu üçün:**  \n- **Telefon:** +994 XX XXX XX XX  \n- **E-poçt:** info@sirketadı.az  \n- **Vebsayt:** www.sirketadı.az  \n\n⚠️ **Təklif müddəti məhduddur — indi hərəkətə keçin!**  \n\n💬 **Kömək lazımdır?** Hansı seçim sizin ehtiyaclarınıza uyğundur, deyin, ətraflı məlumat verim!",
+          "learned_at": "2025-12-18T15:31:08.204866"
+        },
+        {
+          "question": "🎁 Xüsusi təklif",
+          "answer": "Təbrik edirik! 🎉  \n\nXüsusi təklifimizdən yararlanmaq üçün aşağıdakı seçimlərdən birini seçə bilərsiniz:  \n\n### 🚀 **1-ci seçim: Məhdud sayda endirim**  \n- **30% endirim** ilk 10 müştəri üçün (kod: **XOS30**).  \n- **Pulsuz çatdırılma** 50 AZN-dən yuxarı sifarişlərə.  \n\n### 🎁 **2-ci seçim: Hədiyyə ilə alış-veriş**  \n- 100 AZN dəyərində alış-veriş edin, **qiyməti 20 AZN olan məhsulu pulsuz** əldə edin.  \n\n### 📦 **3-cü seçim: Topdan alış üstünlükləri**  \n- 500 AZN+ sifarişlərə **xüsusi qiymət + şəxsi menecer** dəstəyi.  \n\n---\n\n📞 **Dərhal qeydiyyat və ya sorğu üçün:**  \n- **Telefon:** +994 XX XXX XX XX  \n- **E-poçt:** info@sirketadı.az  \n- **Vebsayt:** www.sirketadı.az  \n\n⚠️ **Təklif müddəti məhduddur — indi hərəkətə keçin!**  \n\n💬 **Kömək lazımdır?** Hansı seçim sizin ehtiyaclarınıza uyğundur, deyin, ətraflı məlumat verim!",
+          "learned_at": "2025-12-18T15:31:08.209870"
+        },
+        {
+          "question": "👨‍💼 Operatorla danış",
+          "answer": "Salam! Mən sizə kömək etmək üçün buradayam. Operatorla danışmaq istəyirsinizsə, aşağıdakı seçimlərdən birini seçə bilərsiniz:\n\n1. **Müştəri xidməti**: Sifariş, çatdırılma, geri qaytarma və ya digər suallarınız üçün.\n2. **Texniki dəstək**: İstifadə problemləri, texniki məsələlər və ya proqram təminatı ilə bağlı kömək.\n3. **Satış və biznes əməkdaşlığı**: Əməkdaşlıq, partnyorluq və ya satışla bağlı sorğular.\n4. **Digər**: Başqa mövzular üçün.\n\nHansı sahə ilə bağlı operatorla danışmaq istəyirsiniz? Mən sizi ən uyğun əlaqə kanalına yönləndirə bilərəm. 😊",
+          "learned_at": "2025-12-18T15:31:23.087547"
+        },
+        {
+          "question": "👨‍💼 Operatorla danış",
+          "answer": "Salam! Mən sizə kömək etmək üçün buradayam. Operatorla danışmaq istəyirsinizsə, aşağıdakı seçimlərdən birini seçə bilərsiniz:\n\n1. **Müştəri xidməti**: Sifariş, çatdırılma, geri qaytarma və ya digər suallarınız üçün.\n2. **Texniki dəstək**: İstifadə problemləri, texniki məsələlər və ya proqram təminatı ilə bağlı kömək.\n3. **Satış və biznes əməkdaşlığı**: Əməkdaşlıq, partnyorluq və ya satışla bağlı sorğular.\n4. **Digər**: Başqa mövzular üçün.\n\nHansı sahə ilə bağlı operatorla danışmaq istəyirsiniz? Mən sizi ən uyğun əlaqə kanalına yönləndirə bilərəm. 😊",
+          "learned_at": "2025-12-18T15:31:23.093552"
+        },
+        {
+          "question": "📊 Məhsullar",
+          "answer": "Salam! Məhsullar haqqında danışmaq üçün buradayam. Ancaq məhsullarınız haqqında daha çox məlumat verməyinizə ehtiyacım var ki, sizə daha yaxşı kömək edə biləm.\n\nMəsələn:\n- Hansı sahədə məhsullarınız var? (texnika, geyim, qida, kosmetika və s.)\n- Hansı xüsusi məhsullar haqqında məlumat istəyirsiniz?\n- Satış statistikası, qiymət strategiyası, inventar idarəetməsi və ya digər mövzularda kömək lazımdır?\n\nMən sizə kömək edə bilərəm:\n✅ **Məhsul təsnifatı və kateqoriyaların optimallaşdırılması**\n✅ **Qiymət strategiyalarının hazırlanması**\n✅ **Satış təhlili və trendlərin müəyyən edilməsi**\n✅ **Məhsul təsvirlərinin yaxşılaşdırılması**\n✅ **İnventar idarəetməsi məsləhətləri**\n\nZəhmət olmasa, məhsullarınız haqqında daha ətraflı məlumat verin ki, sizə ən faydalı köməyi göstərə biləm! 🚀",
+          "learned_at": "2025-12-18T15:31:39.588870"
+        },
+        {
+          "question": "📊 Məhsullar",
+          "answer": "Salam! Məhsullar haqqında danışmaq üçün buradayam. Ancaq məhsullarınız haqqında daha çox məlumat verməyinizə ehtiyacım var ki, sizə daha yaxşı kömək edə biləm.\n\nMəsələn:\n- Hansı sahədə məhsullarınız var? (texnika, geyim, qida, kosmetika və s.)\n- Hansı xüsusi məhsullar haqqında məlumat istəyirsiniz?\n- Satış statistikası, qiymət strategiyası, inventar idarəetməsi və ya digər mövzularda kömək lazımdır?\n\nMən sizə kömək edə bilərəm:\n✅ **Məhsul təsnifatı və kateqoriyaların optimallaşdırılması**\n✅ **Qiymət strategiyalarının hazırlanması**\n✅ **Satış təhlili və trendlərin müəyyən edilməsi**\n✅ **Məhsul təsvirlərinin yaxşılaşdırılması**\n✅ **İnventar idarəetməsi məsləhətləri**\n\nZəhmət olmasa, məhsullarınız haqqında daha ətraflı məlumat verin ki, sizə ən faydalı köməyi göstərə biləm! 🚀",
+          "learned_at": "2025-12-18T15:31:39.601877"
+        },
+        {
+          "question": "ℹ️ Haqqımızda",
+          "answer": "Salam! Mən sizin satış və biznes üzrə AI köməkçisiniz. Mənim məqsədim sizə aşağıdakı sahələrdə kömək etməkdir:\n\n**Mən nə edə bilərəm:**\n- Satış strategiyaları və taktikaları hazırlamaq\n- Müştəri əlaqələri və satış danışıqları üzrə məsləhətlər\n- Marketinq kampaniyaları planlaşdırmaq\n- Biznes inkişafı və böyümə strategiyaları\n- Satış təqdimatları və təkliflər hazırlamaq\n- Rəqabət təhlili və bazar araşdırması\n- Satış məhsuldarlığını artırmaq üçün tövsiyələr\n\n**Mənim xüsusiyyətlərim:**\n- Praktik, tətbiq oluna bilən tövsiyələr\n- Müxtəlif sənaye və biznes ölçüləri üçün fərdiləşdirilmiş yanaşma\n- Real dünya biznes problemlərinə həllər\n- Satış psixologiyası və müştəri davranışı daxil olmaqla dərin analiz\n\nSizə necə kömək edə bilərəm? Xüsusi bir satış vəziyyəti, biznes problemi və ya marketinq sualınız varmı?",
+          "learned_at": "2025-12-18T15:32:01.321242"
+        },
+        {
+          "question": "ℹ️ Haqqımızda",
+          "answer": "Salam! Mən sizin satış və biznes üzrə AI köməkçisiniz. Mənim məqsədim sizə aşağıdakı sahələrdə kömək etməkdir:\n\n**Mən nə edə bilərəm:**\n- Satış strategiyaları və taktikaları hazırlamaq\n- Müştəri əlaqələri və satış danışıqları üzrə məsləhətlər\n- Marketinq kampaniyaları planlaşdırmaq\n- Biznes inkişafı və böyümə strategiyaları\n- Satış təqdimatları və təkliflər hazırlamaq\n- Rəqabət təhlili və bazar araşdırması\n- Satış məhsuldarlığını artırmaq üçün tövsiyələr\n\n**Mənim xüsusiyyətlərim:**\n- Praktik, tətbiq oluna bilən tövsiyələr\n- Müxtəlif sənaye və biznes ölçüləri üçün fərdiləşdirilmiş yanaşma\n- Real dünya biznes problemlərinə həllər\n- Satış psixologiyası və müştəri davranışı daxil olmaqla dərin analiz\n\nSizə necə kömək edə bilərəm? Xüsusi bir satış vəziyyəti, biznes problemi və ya marketinq sualınız varmı?",
+          "learned_at": "2025-12-18T15:32:01.326244"
+        },
+        {
+          "question": "⭐ Rəylər",
+          "answer": "Təəssüf ki, siz \"rəylər\" haqqında daha ətraflı məlumat verməmisiniz. Mənə kömək etmək üçün aşağıdakı məlumatları verə bilərsiniz:\n\n1. **Hansı sahə ilə bağlı rəylər?** (məhsul, xidmət, restoran, film, kitab və s.)\n2. **Rəyləri hansı məqsədlə istəyirsiniz?** (təhlil etmək, yığmaq, yazmaq, qiymətləndirmək)\n3. **Xüsusi platforma və ya mənbə?** (Google, Amazon, Tripadvisor, Instagram və s.)\n\nMən sizə aşağıdakı köməkləri göstərə bilərəm:\n\n✅ **Rəy təhlili** - müsbət/mənfi rəylərin faizi, əsas mövzular  \n✅ **Rəy yazmaq** - effektiv rəy yazmaq üçün tövsiyələr  \n✅ **Rəy yığmaq** - müştəri rəylərinin necə toplanması  \n✅ **Rəy cavabları** - rəylərə professional cavab yazmaq  \n\nZəhmət olmasa, ehtiyacınızı daha dəqiq izah edin ki, sizə ən faydalı köməkliyi göstərə bilim! 😊",
+          "learned_at": "2025-12-18T15:32:16.996139"
+        },
+        {
+          "question": "⭐ Rəylər",
+          "answer": "Təəssüf ki, siz \"rəylər\" haqqında daha ətraflı məlumat verməmisiniz. Mənə kömək etmək üçün aşağıdakı məlumatları verə bilərsiniz:\n\n1. **Hansı sahə ilə bağlı rəylər?** (məhsul, xidmət, restoran, film, kitab və s.)\n2. **Rəyləri hansı məqsədlə istəyirsiniz?** (təhlil etmək, yığmaq, yazmaq, qiymətləndirmək)\n3. **Xüsusi platforma və ya mənbə?** (Google, Amazon, Tripadvisor, Instagram və s.)\n\nMən sizə aşağıdakı köməkləri göstərə bilərəm:\n\n✅ **Rəy təhlili** - müsbət/mənfi rəylərin faizi, əsas mövzular  \n✅ **Rəy yazmaq** - effektiv rəy yazmaq üçün tövsiyələr  \n✅ **Rəy yığmaq** - müştəri rəylərinin necə toplanması  \n✅ **Rəy cavabları** - rəylərə professional cavab yazmaq  \n\nZəhmət olmasa, ehtiyacınızı daha dəqiq izah edin ki, sizə ən faydalı köməkliyi göstərə bilim! 😊",
+          "learned_at": "2025-12-18T15:32:17.002143"
+        },
+        {
+          "question": "Mənim adım nədir?",
+          "answer": "Siz mənim adımı soruşursunuz, amma mən sizin adınızı bilmirəm. 😊 Sizin adınızı öyrənmək üçün mənə deyə bilərsiniz, sonra sizə kömək etmək üçün daha şəxsi yanaşma tapa bilərəm!",
+          "learned_at": "2025-12-18T15:32:37.982082"
+        },
+        {
+          "question": "Mənim adım nədir?",
+          "answer": "Siz mənim adımı soruşursunuz, amma mən sizin adınızı bilmirəm. 😊 Sizin adınızı öyrənmək üçün mənə deyə bilərsiniz, sonra sizə kömək etmək üçün daha şəxsi yanaşma tapa bilərəm!",
+          "learned_at": "2025-12-18T15:32:37.992085"
+        },
+        {
+          "question": "Oldu sağolun",
+          "answer": "Xoş gördük! Əgər hər hansı bir sualınız və ya kömək lazım olan bir məsələ varsa, mən buradayam. Uğurlar!",
+          "learned_at": "2025-12-18T15:34:11.249295"
+        },
+        {
+          "question": "Oldu sağolun",
+          "answer": "Xoş gördük! Əgər hər hansı bir sualınız və ya kömək lazım olan bir məsələ varsa, mən buradayam. Uğurlar!",
+          "learned_at": "2025-12-18T15:34:11.255300"
+        },
+        {
+          "question": "Görüşərik",
+          "answer": "Görüşərik! Əgər hər hansı bir sualınız olarsa, buradayam. Uğurlar!",
+          "learned_at": "2025-12-18T15:35:07.534474"
+        },
+        {
+          "question": "Görüşərik",
+          "answer": "Görüşərik! Əgər hər hansı bir sualınız olarsa, buradayam. Uğurlar!",
+          "learned_at": "2025-12-18T15:35:07.548482"
+        }
+      ]
+    }
   }
-]
+}

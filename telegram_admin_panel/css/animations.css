@@ -1,0 +1,76 @@
+/* ===== ENHANCED DASHBOARD TRANSITIONS ===== */
+@keyframes smoothAppear {
+  0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.98);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+  }
+}
+
+.dashboard-appear {
+  animation: smoothAppear 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Emergency banner entrance */
+@keyframes emergencyEntrance {
+  0% {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.emergency-entrance {
+  animation: emergencyEntrance 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Welcome toast */
+.welcome-toast {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  background: var(--color-success);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
+  z-index: 2000;
+  animation: slideInRight 0.3s ease;
+}
+
+.welcome-toast.fade-out {
+  animation: slideOutRight 0.3s ease forwards;
+}
+
+@keyframes slideOutRight {
+  from {
+      transform: translateX(0);
+      opacity: 1;
+  }
+  to {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+}
+
+/* Loading stats animation */
+@keyframes statCountUp {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.stat-animate {
+  animation: statCountUp 0.5s ease forwards;
+}
