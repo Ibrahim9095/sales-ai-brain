@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dashboard - Premium</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- GLOW EFFECTS BACKGROUND -->
+    <div class="glow-effect glow-1"></div>
+    <div class="glow-effect glow-2"></div>
+    <div class="glow-effect glow-3"></div>
+
+    <div class="dashboard-wrapper">
+        <!-- SIDEBAR - PREMIUM -->
+        <aside class="sidebar-premium">
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h2>AI<span>Monitor</span></h2>
+                        <p class="logo-subtitle">Premium Dashboard</p>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3 class="section-title">Əsas</h3>
+                    <a href="dashboard.html" class="nav-item active">
+                        <div class="nav-icon">
+                            <i class="fas fa-chart-network"></i>
+                        </div>
+                        <span class="nav-text">Dashboard</span>
+                        <span class="nav-badge new">New</span>
+                    </a>
+                    <a href="conversations.html" class="nav-item">
+                        <div class="nav-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <span class="nav-text">Söhbətlər</span>
+                        <span class="nav-badge">24</span>
+                    </a>
+                    <a href="analytics.html" class="nav-item">
+                        <div class="nav-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <span class="nav-text">Analitika</span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <h3 class="section-title">İdarəetmə</h3>
+                    <a href="#" class="nav-item">
+                        <div class="nav-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <span class="nav-text">Müştərilər</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <div class="nav-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <span class="nav-text">Bot Konfiq</span>
+                        <span class="nav-badge pro">PRO</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <div class="nav-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span class="nav-text">Təhlükəsizlik</span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <h3 class="section-title">Analiz</h3>
+                    <a href="#" class="nav-item">
+                        <div class="nav-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <span class="nav-text">Trendlər</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <div class="nav-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <span class="nav-text">Risklər</span>
+                        <span class="nav-badge hot">5</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <div class="nav-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <span class="nav-text">Performans</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Admin" alt="Admin">
+                        <span class="status-indicator online"></span>
+                    </div>
+                    <div class="user-info">
+                        <h4>Admin Panel</h4>
+                        <p>Premium Plan</p>
+                    </div>
+                    <button class="upgrade-btn">
+                        <i class="fas fa-crown"></i>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <!-- TOP BAR -->
+            <header class="top-bar">
+                <div class="breadcrumb">
+                    <h1>
+                        <i class="fas fa-chart-network"></i>
+                        Dashboard
+                    </h1>
+                    <nav class="breadcrumb-nav">
+                        <a href="#">Ana Səhifə</a>
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="current">Dashboard</span>
+                    </nav>
+                </div>
+                <div class="top-actions">
+                    <div class="search-container">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Axtarış...">
+                    </div>
+                    <button class="action-btn notification-btn">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </button>
+                    <button class="action-btn refresh-btn">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                    <div class="quick-actions">
+                        <button class="quick-action-btn">
+                            <i class="fas fa-plus"></i>
+                            Yeni
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- WELCOME BANNER -->
+            <div class="welcome-banner">
+                <div class="banner-content">
+                    <div class="banner-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="banner-text">
+                        <h2>🤖 AI Monitor Panelinə Xoş Gəlmisiniz!</h2>
+                        <p>Telegram botunuzun performansını real-time izləyin, riskləri aşkar edin və müştəri məmnuniyyətini artırın.</p>
+                    </div>
+                    <div class="banner-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <span class="stat-value">99.9%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <span class="stat-value">24/7</span>
+                                <span class="stat-label">Monitor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-particles">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+            </div>
+
+            <!-- QUICK STATS -->
+            <div class="quick-stats-grid">
+                <div class="stat-card">
+                    <div class="card-header">
+                        <div class="icon-container blue">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="trend-indicator up">
+                            <i class="fas fa-arrow-up"></i> 12%
+                        </div>
+                    </div>
+                    <h3 class="stat-value" id="total-users">1,248</h3>
+                    <p class="stat-label">Ümumi Müştəri</p>
+                    <div class="stat-progress">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="card-header">
+                        <div class="icon-container green">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <div class="trend-indicator up">
+                            <i class="fas fa-arrow-up"></i> 8%
+                        </div>
+                    </div>
+                    <h3 class="stat-value" id="active-chats">47</h3>
+                    <p class="stat-label">Aktiv Söhbət</p>
+                    <div class="stat-progress">
+                        <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+                </div>
+
+                <div class="stat-card warning">
+                    <div class="card-header">
+                        <div class="icon-container orange">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="trend-indicator up">
+                            <i class="fas fa-arrow-up"></i> 5%
+                        </div>
+                    </div>
+                    <h3 class="stat-value" id="warning-count">12</h3>
+                    <p class="stat-label">Narazı Müştəri</p>
+                    <div class="stat-progress">
+                        <div class="progress-bar" style="width: 30%"></div>
+                    </div>
+                </div>
+
+                <div class="stat-card danger">
+                    <div class="card-header">
+                        <div class="icon-container red">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="trend-indicator down">
+                            <i class="fas fa-arrow-down"></i> 3%
+                        </div>
+                    </div>
+                    <h3 class="stat-value" id="danger-count">3</h3>
+                    <p class="stat-label">Yüksək Risk</p>
+                    <div class="stat-progress">
+                        <div class="progress-bar" style="width: 15%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERFORMANCE METRICS -->
+            <div class="performance-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-chart-line"></i> Performans Metrikaları</h3>
+                    <div class="section-actions">
+                        <button class="time-filter active">24 Saat</button>
+                        <button class="time-filter">7 Gün</button>
+                        <button class="time-filter">30 Gün</button>
+                    </div>
+                </div>
+                <div class="metrics-grid">
+                    <div class="metric-card large">
+                        <div class="metric-header">
+                            <h4>📈 Risk Trendləri</h4>
+                            <span class="metric-badge">Real-time</span>
+                        </div>
+                        <div class="chart-placeholder">
+                            <div class="chart-container">
+                                <!-- Chart buraya -->
+                                <div class="chart-line" style="height: 70%"></div>
+                                <div class="chart-line" style="height: 50%"></div>
+                                <div class="chart-line" style="height: 85%"></div>
+                                <div class="chart-line" style="height: 40%"></div>
+                                <div class="chart-line" style="height: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <h4>⚡ Bot Cavab Vaxtı</h4>
+                            <span class="metric-value">2.3s</span>
+                        </div>
+                        <div class="metric-content">
+                            <div class="speedometer">
+                                <div class="speedometer-fill" style="width: 85%"></div>
+                            </div>
+                            <div class="metric-stats">
+                                <span class="stat">Ortalama: 2.3s</span>
+                                <span class="stat">Ən Yaxşı: 1.2s</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <h4>🎯 Dəqiqlik Dərəcəsi</h4>
+                            <span class="metric-value">92%</span>
+                        </div>
+                        <div class="metric-content">
+                            <div class="accuracy-circle">
+                                <div class="circle-progress" style="--progress: 92"></div>
+                                <span class="circle-value">92%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RECENT ACTIVITY -->
+            <div class="recent-activity-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-history"></i> Son Fəaliyyət</h3>
+                    <button class="view-all-btn">Hamısını gör <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item new">
+                        <div class="activity-icon danger">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Yüksək Risk Aşkar Edildi</h4>
+                            <p>Müştəri "Ahmed" itmək üzrədir - "pul qaytarın" tələbi</p>
+                            <span class="activity-time">2 dəqiqə əvvəl</span>
+                        </div>
+                        <button class="activity-action-btn">
+                            <i class="fas fa-handshake"></i> Müdaxilə
+                        </button>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Narazılıq Mesajı</h4>
+                            <p>Müştəri "Leyla" qiymətdən narazıdır</p>
+                            <span class="activity-time">15 dəqiqə əvvəl</span>
+                        </div>
+                        <button class="activity-action-btn">
+                            <i class="fas fa-eye"></i> Bax
+                        </button>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon success">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Bot Cavabı Göndərildi</h4>
+                            <p>"Salam, necə kömək edə bilərəm?" - 1.8s</p>
+                            <span class="activity-time">25 dəqiqə əvvəl</span>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon info">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Yeni Müştəri Qeydiyyatı</h4>
+                            <p>"Samir" botla əlaqə yaratdı</p>
+                            <span class="activity-time">1 saat əvvəl</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SYSTEM STATUS -->
+            <div class="system-status-section">
+                <div class="section-header">
+                    <h3><i class="fas fa-server"></i> Sistem Statusu</h3>
+                </div>
+                <div class="status-grid">
+                    <div class="status-card online">
+                        <div class="status-header">
+                            <div class="status-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>AI Motoru</h4>
+                        </div>
+                        <div class="status-indicator">
+                            <span class="status-dot"></span>
+                            <span class="status-text">🟢 Aktiv</span>
+                        </div>
+                        <p class="status-desc">DeepSeek API ilə uyğunlaşır</p>
+                    </div>
+
+                    <div class="status-card online">
+                        <div class="status-header">
+                            <div class="status-icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <h4>Telegram Bot</h4>
+                        </div>
+                        <div class="status-indicator">
+                            <span class="status-dot"></span>
+                            <span class="status-text">🟢 Aktiv</span>
+                        </div>
+                        <p class="status-desc">24/7 işləyir</p>
+                    </div>
+
+                    <div class="status-card warning">
+                        <div class="status-header">
+                            <div class="status-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>Database</h4>
+                        </div>
+                        <div class="status-indicator">
+                            <span class="status-dot"></span>
+                            <span class="status-text">🟡 Orta Yük</span>
+                        </div>
+                        <p class="status-desc">75% istifadə olunur</p>
+                    </div>
+
+                    <div class="status-card online">
+                        <div class="status-header">
+                            <div class="status-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Təhlükəsizlik</h4>
+                        </div>
+                        <div class="status-indicator">
+                            <span class="status-dot"></span>
+                            <span class="status-text">🟢 Aktiv</span>
+                        </div>
+                        <p class="status-desc">Bütün sistemlər təhlükəsiz</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

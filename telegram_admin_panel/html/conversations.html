@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Canlı Söhbət Monitoru</title>
+    <link rel="stylesheet" href="../css/conversations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Ana Konteyner -->
+    <div class="live-chat-container" id="live-chat-container">
+        <!-- Üst Header -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <div class="logo">
+                    <i class="fas fa-broadcast-tower"></i>
+                    <h1>TELEGRAM CANLI SÖHBƏT MONİTORU</h1>
+                </div>
+                <div class="connection-status">
+                    <span class="status-dot" id="status-dot"></span>
+                    <span id="connection-text">BAĞLANIR...</span>
+                </div>
+            </div>
+            
+            <!-- Mərkəz Header: Cari söhbət məlumatı -->
+            <div class="header-center">
+                <div class="current-chat" id="current-chat-display">
+                    <div class="chat-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="chat-info">
+                        <h3 id="current-username">SÖHBƏT SEÇİN</h3>
+                        <p id="current-chat-meta">Risk: 0% • Mesaj: 0 • Son: indi</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div class="time-display" id="time-display">00:00:00</div>
+                <div class="stats-badge">
+                    <i class="fas fa-comments"></i>
+                    <span id="active-chats-count">0</span>
+                </div>
+                <button class="fullscreen-btn" id="fullscreen-btn" title="Tam ekran">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Əsas Məzmun -->
+        <main class="dashboard-main">
+            <!-- YALNIZ Mərkəzi Panel: Canlı Söhbət -->
+            <section class="main-content">
+                <div class="chat-header">
+                    <div class="user-header">
+                        <div class="user-avatar-large" id="main-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="user-details-large">
+                            <h2 id="main-username">SÖHBƏT SEÇİN</h2>
+                            <div class="user-stats-large">
+                                <div class="stat-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Risk: <strong id="main-risk">0%</strong></span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>Mesaj: <strong id="main-messages">0</strong></span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Son: <strong id="main-time">indi</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="action-btn danger" id="intervention-btn">
+                            <i class="fas fa-handshake"></i>
+                            <span>MÜDAXİLƏ ET</span>
+                        </button>
+                        <button class="action-btn success" id="auto-response-btn">
+                            <i class="fas fa-robot"></i>
+                            <span>AVTOMATİK CAVAB</span>
+                        </button>
+                        <button class="action-btn emergency" id="emergency-btn">
+                            <i class="fas fa-fire"></i>
+                            <span>TƏCİLİ MÜDAXİLƏ</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Chat Messages Container -->
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Mesajlar buraya yüklənəcək -->
+                    <div class="welcome-screen">
+                        <div class="welcome-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>TELEGRAM CANLI SÖHBƏT MONİTORU</h3>
+                        <p>Bot ilə müştəri söhbətləri burada böyük ekranda görünür</p>
+                        <div class="welcome-features">
+                            <div class="feature-item">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Real-time yenilənmə</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Risk analizi</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-handshake"></i>
+                                <span>Operator müdaxiləsi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chat Footer (Yalnız son yenilənmə vaxtı) -->
+                <footer class="chat-footer">
+                    <div class="last-update">
+                        Son yenilənmə: <span id="last-update-time">00:00:00</span>
+                    </div>
+                </footer>
+            </section>
+
+            <!-- Sağ Panel: Tez Əməliyyatlar -->
+            <aside class="sidebar-right">
+                <div class="panel-header">
+                    <h2><i class="fas fa-bolt"></i> TEZ ƏMƏLİYYATLAR</h2>
+                </div>
+                
+                <div class="quick-actions">
+                    <button class="quick-btn offer" id="offer-btn">
+                        <i class="fas fa-gift"></i>
+                        <span>TƏKLİF GÖNDƏR</span>
+                    </button>
+                    <button class="quick-btn resolve" id="resolve-btn">
+                        <i class="fas fa-check-circle"></i>
+                        <span>HƏLL EDİLDİ</span>
+                    </button>
+                </div>
+                
+                <!-- Tez Mesaj Şablonları -->
+                <div class="message-templates">
+                    <h3><i class="fas fa-comment-dots"></i> TEZ MESAJLAR</h3>
+                    <div class="template-grid">
+                        <button class="template-btn" data-template="uzr">
+                            <i class="fas fa-heart"></i>
+                            <span>Üzr istə</span>
+                        </button>
+                        <button class="template-btn" data-template="endirim">
+                            <i class="fas fa-gift"></i>
+                            <span>Endirim</span>
+                        </button>
+                        <button class="template-btn" data-template="operator">
+                            <i class="fas fa-headset"></i>
+                            <span>Operator</span>
+                        </button>
+                        <button class="template-btn" data-template="teklif">
+                            <i class="fas fa-star"></i>
+                            <span>Təklif</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Sistem Statistika -->
+               <!-- conversations.html faylında aşağıdakı hissəni əlavə edin: -->
+
+<div class="system-stats">
+    <h3><i class="fas fa-chart-bar"></i> SİSTEM VƏZİYYƏTİ</h3>
+    <div class="stats-grid">
+        <div class="stat-box">
+            <div class="stat-label">Orta Risk</div>
+            <div class="stat-value warning" id="stat-warning">0</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">Yüksək Risk</div>
+            <div class="stat-value danger" id="stat-danger">0</div>
+        </div>
+    </div>
+    
+    <!-- Analyzing düyməsi -->
+    <div class="analysis-controls">
+        <button id="analyzeBtn" class="btn-analyze">
+            <i class="fas fa-search"></i> ANALYZING
+        </button>
+    </div>
+    
+    <!-- Analiz nəticələri -->
+    <div id="analysisResult" class="analysis-result">
+        <h4><i class="fas fa-chart-line"></i> Risk Analizi</h4>
+        <div id="riskDetails" class="risk-details">
+            <!-- Risk detalları buraya yüklənəcək -->
+        </div>
+    </div>
+</div>
+<!-- conversations.html faylında yalnız aşağıdakı hissəni dəyişdirin: -->
+
+<!-- Sistem Statistika -->
+<div class="system-stats">
+    <h3><i class="fas fa-chart-bar"></i> SİSTEM VƏZİYYƏTİ</h3>
+    <div class="stats-grid">
+        <div class="stat-box">
+            <div class="stat-label">Orta Risk</div>
+            <div class="stat-value warning" id="stat-warning">0</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">Yüksək Risk</div>
+            <div class="stat-value danger" id="stat-danger">0</div>
+        </div>
+    </div>
+    
+    <!-- Analyzing düyməsi -->
+    <div class="analysis-section" style="margin-top: 20px;">
+        <button id="analyzeBtn" class="btn-analyze">
+            <i class="fas fa-search"></i> ANALYZING
+        </button>
+        <div id="analysisResult" class="analysis-result" style="display: none; margin-top: 15px;">
+            <div class="risk-details">
+                <h4><i class="fas fa-chart-line"></i> Risk Analizi</h4>
+                <div id="riskDetails"></div>
+            </div>
+        </div>
+    </div>
+</div>
+            </aside>
+        </main>
+
+        <!-- Xəbərdarlıq Konteyneri -->
+        <div class="alert-container" id="alert-container"></div>
+    </div>
+
+    <script src="../js/conversations.js"></script>
+</body>
+</html>
